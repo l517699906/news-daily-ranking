@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.llf</groupId>
+        <artifactId>news-daily-ranking</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>C-start</artifactId>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.llf</groupId>
+            <artifactId>news-daily-ranking-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.llf</groupId>
+            <artifactId>news-daily-ranking-job</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.llf</groupId>
+            <artifactId>news-daily-ranking-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.llf</groupId>
+            <artifactId>news-daily-ranking-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.llf</groupId>
+            <artifactId>news-daily-ranking-web</artifactId>
+        </dependency>
+
+        <!-- 测试组件 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- 添加四个环境的变量，变量名为environment -->
+    <profiles>
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <environment>test</environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>consumer</id>
+            <properties>
+                <environment>consumer</environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>producer</id>
+            <properties>
+                <environment>producer</environment>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <finalName>summo-sbmy</finalName>
+        <resources>
+            <resource>
+                <!-- 指定配置文件所在的resource目录 -->
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>application.yml</include>
+                    <include>logback-spring.xml</include>
+                    <include>**/*.html</include>
+                    <include>**/*.js</include>
+                    <include>**/*.css</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <!-- 指定配置文件所在的resource目录 -->
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.woff</include>
+                    <include>**/*.ttf</include>
+                    <include>**/*.xdb</include>
+                    <include>**/*.jks</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.13.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>com.summo.sbmy.Application</mainClass>
+                </configuration>
+            </plugin>
+            <!-- 解压fat jar到target/${project-name}目录 -->
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <unzip
+                                        src="${project.build.directory}/${project.build.finalName}.${project.packaging}"
+                                        dest="${project.build.directory}/summo-sbmy"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
