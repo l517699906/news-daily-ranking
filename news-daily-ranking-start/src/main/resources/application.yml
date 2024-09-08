@@ -15,7 +15,7 @@ spring:
     # 数据库用户名
     username: root
     # 数据库密码
-    password: Grt2008_
+    password: root
     # 数据库驱动类名
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
@@ -68,8 +68,8 @@ spring:
     timeout: 1800000
     # Redis服务器端口
     port: 6379
-    # Redis服务器连接密码
-    password: llf19990319
+#    # Redis服务器连接密码
+#    password: llf19990319
     # 使用Lettuce连接池时的最大等待时间（-1表示无限制
     lettuce:
       pool:

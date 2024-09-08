@@ -5,29 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="515a75a0-48ec-4ec4-8675-31c4b87a466a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/java/com/llf/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-web/src/main/java/com/llf/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/enums/HotSearchEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/model/HotSearchDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/page/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/AbstractBaseDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/MetaObjectHandlerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/entity/HotSearchDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/mapper/HotSearchMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/repository/HotSearchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/repository/impl/HotSearchRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/generator/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/generator/generatorConfiguration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/mybatis.mapper/HotSearchMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/src/main/java/com/llf/job/baidu/BaiduHotSearchJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/src/main/java/com/llf/job/douyin/DouyinHotSearchJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/HotSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/convert/HotSearchConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/impl/HotSearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,9 +52,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\maven\apache-maven-3.9.5\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../maven/apache-maven-3.9.5" />
-        <option name="userSettingsFile" value="E:\maven\apache-maven-3.9.5\conf\settings.xml" />
+        <option name="localRepository" value="E:\opt\apache-maven-3.8.6\repo" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\Users\11470\.m2\settings1.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -65,9 +69,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2ldFcXfnmiuvaeh9gJ7qddKTPxj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -89,23 +93,58 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "E:/idea/ojmiao-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.6264501",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea\news-daily-ranking\news-daily-ranking-dao\src\main" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\news-daily-ranking\news-daily-ranking-start\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="d30434e5-fb6c-48e4-8fb3-a317edba7e78" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="C-start" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.llf.Application" />
@@ -134,6 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725502126083</updated>
       <workItem from="1725502127120" duration="6430000" />
+      <workItem from="1725672101223" duration="6397000" />
     </task>
     <servers />
   </component>

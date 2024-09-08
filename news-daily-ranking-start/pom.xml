@@ -78,7 +78,7 @@
     </profiles>
 
     <build>
-        <finalName>summo-sbmy</finalName>
+        <finalName>llf-ndr</finalName>
         <resources>
             <resource>
                 <!-- 指定配置文件所在的resource目录 -->

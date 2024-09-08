@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.llf.dao.mapper.HotSearchMapper">
+    <resultMap id="BaseResultMap" type="com.llf.dao.entity.HotSearchDO">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="hot_search_title" jdbcType="VARCHAR" property="hotSearchTitle" />
+        <result column="hot_search_author" jdbcType="VARCHAR" property="hotSearchAuthor" />
+        <result column="hot_search_resource" jdbcType="VARCHAR" property="hotSearchResource" />
+        <result column="hot_search_order" jdbcType="INTEGER" property="hotSearchOrder" />
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+        <result column="creator_id" jdbcType="BIGINT" property="creatorId" />
+        <result column="modifier_id" jdbcType="BIGINT" property="modifierId" />
+        <result column="hot_search_id" jdbcType="VARCHAR" property="hotSearchId" />
+        <result column="hot_search_heat" jdbcType="VARCHAR" property="hotSearchHeat" />
+        <result column="hot_search_url" jdbcType="LONGVARCHAR" property="hotSearchUrl" />
+        <result column="hot_search_cover" jdbcType="LONGVARCHAR" property="hotSearchCover" />
+        <result column="hot_search_author_avatar" jdbcType="LONGVARCHAR" property="hotSearchAuthorAvatar" />
+        <result column="hot_search_excerpt" jdbcType="LONGVARCHAR" property="hotSearchExcerpt" />
+    </resultMap>
+</mapper>

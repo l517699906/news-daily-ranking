@@ -1,0 +1,49 @@
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="generator/config.properties"/>
+
+    <!-- MySQL数据库驱动jar包路径，全路径 -->
+    <classPathEntry location="/xxx/mysql-connector-java-8.0.11.jar"/>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.baomidou.mybatisplus.core.mapper.BaseMapper"/>
+            <!-- 插件默认的通用mapper <property name="mappers" itemValue="tk.mybatis.mapper.common.Mapper"/>-->
+            <property name="caseSensitive" value="true"/>
+            <property name="lombok" value="Getter,Setter,Builder,NoArgsConstructor,AllArgsConstructor"/>
+        </plugin>
+
+        <!-- 数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.user}" password="${jdbc.password}"/>
+
+        <!-- entity路径 -->
+        <javaModelGenerator targetPackage="com.llf.dao.entity"
+                            targetProject="src/main/java"/>
+
+        <!-- xml路径 -->
+        <sqlMapGenerator targetPackage="mybatis/mapper"
+                         targetProject="src/main/resources/">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- mapper路径 -->
+        <javaClientGenerator targetPackage="com.llf.dao.mapper"
+                             targetProject="src/main/java"
+                             type="XMLMAPPER">
+        </javaClientGenerator>
+
+        <!-- 自增ID路径 -->
+        <table tableName="${table.name}" domainObjectName="${entity.name}"
+               mapperName="${mapper.name}">
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+    </context>
+</generatorConfiguration>

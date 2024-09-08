@@ -2,7 +2,7 @@
     <!-- 默认的一些配置 -->
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     <!-- 定义应用名称，区分应用 -->
-    <property name="APP_NAME" value="summo-sbmy"/>
+    <property name="APP_NAME" value="llf-ndr"/>
     <!-- 定义日志文件的输出路径 -->
     <property name="LOG_PATH" value="${user.home}/logs/${APP_NAME}"/>
     <!-- 定义日志文件名称和路径 -->
