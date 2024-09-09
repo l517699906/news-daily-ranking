@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="515a75a0-48ec-4ec4-8675-31c4b87a466a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/enums/HotSearchEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/model/HotSearchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-common/src/main/java/com/llf/page/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/AbstractBaseDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/MetaObjectHandlerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/entity/HotSearchDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/mapper/HotSearchMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/repository/HotSearchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/java/com/llf/dao/repository/impl/HotSearchRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/generator/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/generator/generatorConfiguration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-dao/src/main/resources/mybatis.mapper/HotSearchMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/src/main/java/com/llf/job/baidu/BaiduHotSearchJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-job/src/main/java/com/llf/job/douyin/DouyinHotSearchJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/HotSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/convert/HotSearchConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news-daily-ranking-service/src/main/java/com/llf/service/impl/HotSearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/news-daily-ranking-start/src/main/resources/logback-spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +66,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "11",
@@ -103,6 +80,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.6264501",
     "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "5c6fb227510bed3eb41efef27ebef55b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -174,7 +152,16 @@
       <updated>1725502126083</updated>
       <workItem from="1725502127120" duration="6430000" />
       <workItem from="1725672101223" duration="6397000" />
+      <workItem from="1725807856102" duration="440000" />
     </task>
+    <task id="LOCAL-00001" summary="编写百度、抖音热搜定时任务">
+      <created>1725807941470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725807941470</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,5 +180,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="编写百度、抖音热搜定时任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写百度、抖音热搜定时任务" />
   </component>
 </project>

@@ -3,3 +3,17 @@ R
 "news-daily-ranking-service/pom.xml,4\6\46284e9c26de0a20055f44cd4a584e95a42a4ef7
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+x
+Hnews-daily-ranking-dao/src/main/java/com/llf/dao/entity/HotSearchDO.java,1\a\1a14496345d4bb17f170e38bc45f604168f299ca
+|
+Lnews-daily-ranking-dao/src/main/java/com/llf/dao/mapper/HotSearchMapper.java,0\b\0b9c4ed590b2aaa3b1793949dd970d1c87a883c7
+„
+Tnews-daily-ranking-dao/src/main/java/com/llf/dao/repository/HotSearchRepository.java,d\0\d0765a9cb91c968e14e85324e2c1e6f45bd81f13
+x
+Hnews-daily-ranking-common/src/main/java/com/llf/enums/HotSearchEnum.java,8\2\820a63e081e310ad66e4326b5c1b6582d2bfaf97
+}
+Mnews-daily-ranking-dao/src/main/java/com/llf/dao/MetaObjectHandlerConfig.java,e\1\e1e2ee328664db8202cf8191a9db7d358ac2b1c3
+P
+ news-daily-ranking-start/pom.xml,f\6\f6114db4b125bea3e8f5b92abdb5e64ca612b42c
+t
+Dnews-daily-ranking-dao/src/main/java/com/llf/dao/AbstractBaseDO.java,d\e\ded45cc4869383ecea248071982fbecc0f177724
