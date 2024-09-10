@@ -117,7 +117,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.summo.sbmy.Application</mainClass>
+                    <mainClass>com.llf.Application</mainClass>
                 </configuration>
             </plugin>
             <!-- 解压fat jar到target/${project-name}目录 -->
@@ -130,7 +130,7 @@
                             <target>
                                 <unzip
                                         src="${project.build.directory}/${project.build.finalName}.${project.packaging}"
-                                        dest="${project.build.directory}/summo-sbmy"/>
+                                        dest="${project.build.directory}/news-daily-ranking"/>
                             </target>
                         </configuration>
                         <goals>

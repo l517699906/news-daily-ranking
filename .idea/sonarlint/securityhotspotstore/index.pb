@@ -3,8 +3,6 @@ R
 "news-daily-ranking-service/pom.xml,4\6\46284e9c26de0a20055f44cd4a584e95a42a4ef7
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-x
-Hnews-daily-ranking-dao/src/main/java/com/llf/dao/entity/HotSearchDO.java,1\a\1a14496345d4bb17f170e38bc45f604168f299ca
 |
 Lnews-daily-ranking-dao/src/main/java/com/llf/dao/mapper/HotSearchMapper.java,0\b\0b9c4ed590b2aaa3b1793949dd970d1c87a883c7
 „
@@ -13,7 +11,17 @@ x
 Hnews-daily-ranking-common/src/main/java/com/llf/enums/HotSearchEnum.java,8\2\820a63e081e310ad66e4326b5c1b6582d2bfaf97
 }
 Mnews-daily-ranking-dao/src/main/java/com/llf/dao/MetaObjectHandlerConfig.java,e\1\e1e2ee328664db8202cf8191a9db7d358ac2b1c3
-P
- news-daily-ranking-start/pom.xml,f\6\f6114db4b125bea3e8f5b92abdb5e64ca612b42c
 t
 Dnews-daily-ranking-dao/src/main/java/com/llf/dao/AbstractBaseDO.java,d\e\ded45cc4869383ecea248071982fbecc0f177724
+f
+6news-daily-ranking-web/src/assets/icons/zhihu-icon.svg,4\d\4d511621b466b1e76ede9f2b9caffae839bad36d
+i
+9news-daily-ranking-web/src/assets/icons/bilibili-icon.svg,0\d\0d990b3b29acbb5461cd7a7f741f71ff3f962d07
+g
+7news-daily-ranking-web/src/assets/icons/douyin-icon.svg,f\9\f92aa75e9d98bac57feccb86bcd6f51e0314c48f
+f
+6news-daily-ranking-web/src/assets/icons/baidu-icon.svg,1\2\127db6a11ac4069aef5891d15a47b3f9e1fef0c9
+V
+&news-daily-ranking-web/public/vite.svg,a\d\ad538d7814abcb26c2b196f2d184f257ae0dba7b
+Q
+!news-daily-ranking-web/.gitignore,8\f\8f750cbd7401f0e68f971ded0c738c4c226d41ab

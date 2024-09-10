@@ -26,4 +26,6 @@ public interface HotSearchService {
      * @return 热搜
      */
     Page<HotSearchDTO> pageQueryHotSearchByTitle(String title, Integer pageNum, Integer pageSize);
+
+    Page<HotSearchDTO> pageQueryHotSearchByType(String hotSearchResource, Integer pageNum, Integer pageSize);
 }

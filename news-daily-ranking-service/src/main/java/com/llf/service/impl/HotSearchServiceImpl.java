@@ -2,6 +2,7 @@ package com.llf.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.page.PageMethod;
 import com.llf.model.HotSearchDTO;
 import com.llf.page.Page;
 import com.llf.service.convert.HotSearchConvert;
@@ -52,10 +53,26 @@ public class HotSearchServiceImpl implements HotSearchService {
     @Override
     public Page<HotSearchDTO> pageQueryHotSearchByTitle(String title, Integer pageNum, Integer pageSize) {
         //设置分页参数
-        PageHelper.startPage(pageNum, pageSize);
+        PageMethod.startPage(pageNum, pageSize);
         //查询热搜
         List<HotSearchDO> hotSearchDOS = hotSearchRepository.list(
                 new QueryWrapper<HotSearchDO>().lambda().like(HotSearchDO::getHotSearchTitle, "%" + title + "%")
+                        .orderByDesc(AbstractBaseDO::getGmtCreate));
+        if (CollectionUtils.isEmpty(hotSearchDOS)) {
+            return Page.emptyPage();
+        }
+        //对象转换
+        return Page.resetPage(hotSearchDOS, hotSearchDOS.stream().map(HotSearchConvert::toDTOWhenQuery)
+                .collect(Collectors.toList()));
+    }
+
+    @Override
+    public Page<HotSearchDTO> pageQueryHotSearchByType(String hotSearchResource, Integer pageNum, Integer pageSize) {
+        //设置分页参数
+        PageMethod.startPage(pageNum, pageSize);
+        //查询热搜
+        List<HotSearchDO> hotSearchDOS = hotSearchRepository.list(
+                new QueryWrapper<HotSearchDO>().lambda().eq(HotSearchDO :: getHotSearchResource,hotSearchResource)
                         .orderByDesc(AbstractBaseDO::getGmtCreate));
         if (CollectionUtils.isEmpty(hotSearchDOS)) {
             return Page.emptyPage();

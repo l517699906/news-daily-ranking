@@ -90,6 +90,10 @@ spring:
         max-active: 2000
         # Jedis连接池的最大等待时间（毫秒）
         max-wait: 10000
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    mode: HTML
 
 # MyBatis配置：自动映射行为设置为全字段
 mybatis:
